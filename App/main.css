@@ -4,7 +4,10 @@
 }
 
 h1, h2, h3, h4 {
-  font-family: Bookman, Copperplate, Copperplate Gothic Light;  
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  flex-wrap: wrap;
+  
+  
 }
 
 h1 {
@@ -15,7 +18,9 @@ h1 {
 }
 
 h2, h3 {
-  line-height: 2px;
+  // line-height: 2px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 p {
@@ -36,7 +41,8 @@ html, body {
 }
 
 h3 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
 }
 
 .page-container {
@@ -64,6 +70,7 @@ h4 {
 
 section {
   display: inline-block;
+  justify-content: center;
 }
 
 .header-text {
@@ -92,9 +99,14 @@ aside {
 
 img {
   float: left;
+  // flex-direction: right;
   width: 33.33%;
   padding: 5px; 
   display: flex;
   max-width: 400px;
   max-height: auto;
+}
+
+#about {
+  padding: 20px;
 }
