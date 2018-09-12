@@ -29,3 +29,14 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+// sidebar/tree trunk
+aside {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #F0F0F2;
+  padding: 5px 10px;
+}
+
+#skills {
+  padding-left: 40px;
+}
