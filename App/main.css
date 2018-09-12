@@ -9,7 +9,9 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 4em;
-  line-height: 8px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  // line-height: 8px;
 }
 
 h2, h3 {
@@ -28,6 +30,7 @@ li {
 
 html, body {
   background-color: rgba(187, 231, 249, 0.667);
+  
   margin: 0;
   padding: 0;
 }
@@ -40,13 +43,14 @@ h3 {
   height: 100vh;
   max-height: 100vh;
   display: grid;
+ overflow: hidden;
   
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: min-content auto auto min-content;
   grid-template-areas: "header header header header"
-  "content content content content"
-  "content content content content"
-  "content footer footer footer";
+                      "content content content content"
+                      "content content content content"
+                      "content footer footer footer";
 }
 
 h4 {
@@ -59,12 +63,11 @@ h4 {
 
 
 section {
-  display: block;
- 
+  display: inline-block;
 }
 
 .header-text {
-  display: flex-box;
+  // display: flex;
   text-align: center;
   // grid-area: header;
 }
@@ -91,7 +94,7 @@ img {
   float: left;
   width: 33.33%;
   padding: 5px; 
-  display: block;
+  display: flex;
   max-width: 400px;
   max-height: auto;
 }
